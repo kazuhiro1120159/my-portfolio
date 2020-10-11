@@ -11,9 +11,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true ,mobile: true});
+        sr.reveal( '.left', { origin: 'left' , distance: '50%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+        sr.reveal( '.right', { origin: 'right' , distance: '50%', duration: 500 , scale: 1.0, delay :500 ,opacity: 0.5,});
+    </script>
 </head>
 
-<body>
+<body style="height: 100%;">
     <div class="container">
         <header class="header">
             <div class="h-box">
@@ -50,15 +56,16 @@
                         <img class="a-img" src="portfolio.jpg" alt="">
                     </div>
                     <div class="about_area-description">
+                        <h3 class="profile">Profile</h3>
                         <div class="about_area-description-text">
                             志村　一太(しむら　かずひろ)<br>
-                            1997.12.17 (22)<br><br>
+                            1997年　埼玉県出身<br><br>
                             はじめまして、志村一太と申します。<br>
                             現在、自らのスキルアップを図りたくWebサイト制作に
                             取り組んでおります。<br>
                             お客様からいただいたWebデザイン案を適切にコーディングし、Webサイトを制作いたします。<br>
-                            また、PCサイトだけではなく、タブレットやスマートフォンなど、あらゆる端末に対応したサイトを制作し、貴社とお客様のつながりに貢献いたします。どうぞよろしくお願いいたします。<br><br>
-                            対応スキル：HTML5,CSS3,jQuery,Bootstrap
+                            どうぞよろしくお願い致します。<br><br>
+                            対応スキル：HTML5,CSS3,jQuery,Bootstrap,PHP
                         </div>
                         <div class="about_area-description-icon">
                             <a href="https://twitter.com/kazunokono_sato">
@@ -84,42 +91,32 @@
                         <div class="serivice-icon">
                         <i class="fas fa-pencil-ruler"></i>
                         </div>
-                        <p class="text">PC・タブレット・スマホ、どの端末でもストレスなく閲覧できるようにレスポンシブ対応いたします。</p>
+                        <p class="text">モバイルファーストと言われている現在においてレスポンシブ対応は必要不可欠となっております。PC・タブレット・スマホ、どの端末でもストレスなく閲覧できるようにレスポンシブ対応いたします。</p>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <h3>HP/LP作成</h3>
                         <div class="serivice-icon">
                         <i class="fas fa-film"></i>
                         </div>
-                        <p class="text">お客様のご要望をヒアリングし、ご要望に沿ったランディングページを作成いたします。</p>
+                        <p class="text">「個人でホームページを持ちたい！」 「会社の概要説明や集客のためのサイトを作りたい！」 そんなお客様のご要望をヒアリングし、ご要望に沿ったランディングページを作成いたします。現在、実績作りの為ため低価格で、制作を承っております。</p>
                     </div>
                 </div>
             </section>
             <section id="works">
                 <h2 class="title">Works</h2>
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                        <h3>シンプルなHP作成</h3>
-                        <a href="file:///C:/Users/%E5%BF%97%E6%9D%91%E4%B8%80%E5%A4%AA/Desktop/html/code%20begin/cod%20begin-home.html">
-                        <div class="works-icon">
-                        <img class="w-img" src="works-image1.png" alt="">
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12">
-                        <h3>ビジネスなHP作成</h3>
-                        <a href="file:///C:/Users/%E5%BF%97%E6%9D%91%E4%B8%80%E5%A4%AA/Desktop/html/code%20begin/codebegintest2-home.html">
-                        <div class="works-icon">
-                        <img class="w-img" src="works-image2.png" alt="">
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12">
-                        <h3>HP作成</h3>
-                        <div class="works-icon coming">
-                        Coming soon
-                        </div>
-                    </div>
+                <div class="portfolio_content">
+                    <a href="https://wasekyou.com/" class="portfolio_box">
+                    <img src="works-image1.png" class="porfolio_img">
+                    <p class="content-p" >簡単なHP模写</p>
+                    </a> 
+                    <a href="https://wasekyou.com/" class="portfolio_box">
+                    <img src="works-image2.png" class="porfolio_img">
+                    <p class="content-p" >簡単なHP模写</p>
+                    </a>
+                    <a href="https://wasekyou.com/" class="portfolio_box">
+                    <img src="works-image2.png" class="porfolio_img">
+                    <p class="content-p" >Airbnb模写</p>
+                    </a>
                 </div>
             </section>
             <section id="contact">

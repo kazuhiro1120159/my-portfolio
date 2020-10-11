@@ -1,0 +1,121 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1250px;
+	margin: 0 auto;
+}
+.header-top{
+	text-align: center;
+
+}
+.image1{
+	size: cover;
+	width: 1250px;
+	border-radius: 10px;
+
+}
+.header-logo {
+	width: 400px;
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+.header-list a{
+	opacity: 0.8;
+    color:black;
+    display: inline-block;
+    padding: 32px 28px 20px 28px;
+    font-size:17px;
+    margin-bottom: 20px;
+}
+.header-list a:hover{
+	color:orange;
+	border-bottom:5px solid #D2691E;
+	border-radius: 3px;
+	display: inline;
+	transition: all 0.5s;
+}
+.header-news h4{
+	color: #fff;
+	background-color:#D2691E;
+	padding: 16px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.news-topics{
+	color: black;
+	opacity: 0.8;
+}
+.news-topics p{
+	padding: 8px;
+	font-weight: normal;
+}
+.news-topics span{
+	font-weight: bold;
+	margin-right: 20px;
+}
+.template{
+    color: #fff;
+	background-color:#D2691E;
+	padding: 16px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.guide{
+	color: black;
+	background-color:#fff;
+	border: 1px solid #cccccc;
+	padding: 16px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:10px;
+	margin-top: 20px;
+	opacity: 0.8;
+}
+.guide-party{
+	padding: 5px;
+	font-weight: normal;
+	color: black;
+	opacity: 0.8;
+}
+.guide-orange{
+	padding: 5px;
+	color: #D2691E;
+    font-weight: bold;
+}
+.header-template a{
+	color: black;
+	opacity:0.8;
+	border-bottom: 1px solid #000000;
+	line-height: 0.9;
+	display: inline-block;
+}
+header{
+	color:black;
+	opacity: 0.8;
+	text-align: center;
+	margin: 45px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}

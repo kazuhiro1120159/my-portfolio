@@ -1,0 +1,291 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: メイリオ,'Hiragino Kaku Gothic ProN W3', sans-serif;
+  background-color: #C3C3C3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.h-title{
+	height: 100px;
+	border-top: 5px solid #0F3BDE;
+	position: relative;
+}
+.h-title .h-logo{
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 4%;
+	transform:translateY(-50%);
+}
+.h-nav{
+	border-top:  1px solid #d2d2d2;
+}
+.h-menu{
+	letter-spacing: -.4em;
+}
+.h-list{
+	display: inline-block;
+	width: calc(100%/6);
+	position: relative;
+	letter-spacing: normal;
+	height:64px;
+	border-right: 1px solid #d2d2d2;
+	box-sizing: border-box;	
+	vertical-align: bottom;
+}
+.h-1-box{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center; 
+	width: 90%;
+}
+.h-l-top{
+	font-size: 15px;
+	color: #666666;
+	margin-bottom: 4px;
+}
+.h-l-bottom{
+	font-size: 10px;
+	color:#bababa;
+	text-align: center;
+}
+.h-list .h-l-top:hover{
+	color:  #0F3BDE;
+}
+.h-list:hover {
+	background-color: #e6ebfa;
+}
+.h-list:hover .h-1-box:before{
+	content: "";
+	width: 3px;
+	position: absolute;
+	height: 100%;
+	left: 4px;
+	background-color: #0F3BDE;
+}
+.active{
+	background-color: #e6ebfa;
+}
+.active .h-1-box:before{
+	content: "";
+	width: 3px;
+	position: absolute;
+	height: 100%;
+	left: 4px;
+	background-color: #0F3BDE;
+}
+.active .h-l-top:hover{
+	color:  #0F3BDE;
+}
+
+.h-image{
+	max-width: 100%;
+	height: auto;
+}
+
+section {
+	width: 70%;
+	margin: 0 45px;
+	float: left;
+	position: relative;
+	margin-bottom: 60px;
+}
+section ,h2 ,ul ,li ,p,a{
+	font-weight:normal;
+}
+.template {
+	background-color: #0F3BDE;
+	line-height: 1.5;
+	color:#fff;
+	display: block;
+	font-size:18px;
+	border-radius: 4px;
+	margin: 25px 0;
+	padding-left: 5px;
+	
+}
+
+section h2 span{
+	padding: 0 20px;
+	border-left: 3px solid #879DEE;
+	display: inline-block;
+	margin:8px 20px;
+}
+section p,li{
+	margin:0 25px;
+}
+.a{
+	margin:0 25px;
+	display: inline-block;
+}
+
+section li{
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 2;
+	padding-bottom: 1px;
+	font-size: 16px;
+	opacity: 0.8;
+}
+.date{
+	color:#0E36D4;
+	margin-right: 25px;
+}
+.new{
+	background-color: red;
+	color:#fff;
+	font-size:8px;
+	padding: 3px 6px;
+}
+.log{
+	color: #0E36D4;
+	float:right;
+	margin:20px 25px 45px;
+	border-bottom: 1px solid #cccccc;
+	line-height: 0.8;
+	font-size:16px;
+	display: inline-block;
+}
+.li{
+	margin-bottom: 30px;
+}
+.template-h2{
+	margin-top: 150px;
+}
+.template-white{
+	background-color: #F7F7F7;
+	padding: 10px 25px ;
+	font-size:18px;
+	opacity: 0.8;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+	margin: 8px 0 15px;
+}
+.template-red{
+	color:#FE0000;
+	background-color: #F7F7F7;
+	padding: 10px 25px ;
+	font-size:18px;
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+	margin: 8px 0 15px;
+}
+section p{
+	opacity: 0.8;
+	line-height: 2;
+}
+section a{
+	color:#666666;
+	border-bottom: 1px solid #666666;
+	line-height:0.8;
+	display: inline-block;
+}
+.span-red
+{
+	color:#FE0000;
+	font-weight:bold;
+}
+
+.side{
+	float: right;
+	width: 25%;
+}
+.s-framebox{
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f4f4f4;
+	margin-bottom: 24px;
+	color: #666666; 
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+.s-h4{
+	padding:20px 10px;
+	border-top: 5px solid blue;
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.s-list{
+	border-bottom: 1px solid #d2d2d2;
+	padding: 15px;
+	overflow: hidden;
+}
+.s-list a{
+	color: #666666;
+}
+.s-list:hover a{
+	color: blue;
+}
+
+.s-list:hover{
+	background-color: #fff;
+}
+.s-box{
+	margin-bottom: 24px;
+	color: #666666;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.s-img{
+	float: left;
+	width: 20%;
+	margin-right: 5px;
+}
+.s-l-title{
+	color: blue;
+	font-size: 11px;
+}
+.s-l-description{
+	font-size: 11px;
+}
+.company-title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px 0;
+}
+.company-info{
+	font-size: 11px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.footer{
+	text-align:center;
+	background-color: #0F3BDE;
+	clear: both;
+	color: #fff;
+	font-size: 13px;
+	padding:18px 0;
+}
+footer a{
+	color:#fff;
+}
+footer span{
+	font-size: 12px;
+}
+footer a:hover{
+	transition: all 0.3s;
+	color: #0F3BDE;
+}

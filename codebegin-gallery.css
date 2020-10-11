@@ -1,0 +1,89 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1260px;
+	margin: 0 auto;
+	opacity: 0.8;
+}	
+.header-logo {
+	width: 400px;
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+.header-top{
+	text-align: center;
+}
+.header-list a{
+	opacity: 0.8;
+    color:black;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size:17px;
+    margin-bottom: 20px;
+}
+.header-list a:hover{
+	color:orange;
+	border-bottom:5px solid #D2691E;
+	border-radius: 3px;
+	display: inline;
+	transition: all 0.5s;
+}
+.container-h4{
+	color: #fff;
+	background-color:#D2691E;
+	padding: 15px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+
+.image img{
+	width: 250px;
+	margin-right: 3%;
+}
+.image .list{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.border{
+	border-bottom: 1px solid #cccccc;
+	margin: 20px 0;
+}
+.list h4{
+	color: #D2691E;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+header{
+	color:black;
+	opacity: 0.8;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+}
+header span{
+	padding-top: 20px;
+	display: inline-block;
+}

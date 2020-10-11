@@ -1,0 +1,124 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1260px;
+	margin: 0 auto;
+	opacity: 0.8;
+}	
+.header-logo {
+	width: 400px;
+	padding-top: 40px;
+	padding-bottom: 35px;
+}
+.header-top{
+	text-align: center;
+}
+.header-list a{
+	opacity: 0.8;
+    color:black;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size:17px;
+    margin-bottom: 20px;
+}
+.header-list a:hover{
+	color:orange;
+	border-bottom:5px solid #D2691E;
+	border-radius: 3px;
+	display: inline;
+	transition: all 0.5s;
+}
+.about-h4 {
+	color: #fff;
+	background-color:#D2691E;
+	padding: 15px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.table table{
+	width: 1260px;
+	opacity: 0.8;
+	margin-bottom: 30px;
+}
+.table-top{
+	text-align: left;
+	background-color: #CCCCff;
+	font-weight: bold;
+
+}
+.table table,tr,td,th{
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+	padding:15px;
+}
+.heading{
+	font-weight: bold;
+	text-align:center;
+	padding: 15px 45px;
+}
+.template-h4{
+	color: black;
+	background-color:#fff;
+	border: 1px solid #cccccc;
+	padding: 16px;
+	font-weight: normal;
+	border-radius: 10px;
+	margin-bottom:10px;
+	margin-top: 20px;
+	opacity: 0.8;
+}
+.orange-p{
+	padding-top: 5px;
+	color: #D2691E;
+    font-weight: bold;
+    }
+.orange-logo{
+	color: #D2691E;
+}
+.background{
+	background-color:  #cccccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+.template a{
+	border-bottom: 1px solid #000000;
+	line-height: 0.9;
+	display: inline-block;
+	margin-left: 20px;
+}
+header{
+	color:black;
+	opacity: 0.8;
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+header span{
+	padding-top: 20px;
+	display: inline-block;
+}
+body p {
+	margin-left: 20px;
+}

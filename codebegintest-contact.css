@@ -1,0 +1,416 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: メイリオ,'Hiragino Kaku Gothic ProN W3', sans-serif;
+  background-color: #C3C3C3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+	width: 1200px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.h-title{
+	border-top: 5px solid blue;
+	height: 100px;
+	position: relative;
+}
+.h-menu{
+	letter-spacing: -.4em;
+}
+.h-logo{
+	position: absolute;
+	top:50%;
+	left: 4%;
+	transform: translateY(-50%);
+	width: 300px;
+}
+.h-nav{
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+.h-list{
+	display: inline-block;
+	width: calc(100%/6);
+	position: relative;
+	box-sizing: border-box;
+	vertical-align: bottom;
+	border-right: 1px solid  #d2d2d2;
+	letter-spacing: normal;
+	height: 64px; 
+	transition:0.5s; 
+}
+.h-l-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 90%;
+	text-align: center;
+}
+.h-l-top{
+	font-size: 15px;
+	color: #666;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.h-l-bottom{
+	font-size: 12px;
+	color: #ccc;
+}
+.h-list:hover{
+	background-color: #e6ebfa;
+}
+.h-list .h-l-top:hover{
+	color: blue;
+}
+.h-list:hover .h-l-box:before{
+	content: "";
+	width: 3px;
+	position: absolute;
+	height: 100%;
+	left: 4px;
+	background-color: blue;
+
+}
+.active{
+	background-color:  #e6ebfa;
+}
+.active .h-l-box:before{
+	content: "";
+	width: 3px;
+	position: absolute;
+	height: 100%;
+	left: 4px;
+	background-color: blue;
+}
+
+
+.main{
+	width:68%;
+	margin-left: 35px;
+	display: inline-block;
+	float: left;
+}
+.m-h2-box{
+	background-color:#103CE0;
+	border-radius: 4px;
+	position:relative;
+	font-weight: normal;
+	margin-top:30px; 
+	margin-bottom: 10px;
+}
+.m-h2:before{
+	content: "";
+	width: 3px;
+	position: absolute;
+	height: 50%;
+	left: 20px;
+	background-color: #879DEC;
+}
+.m-h2{
+	font-size: 18px;
+	color: #fff;
+	padding:10px 40px;
+	line-height: 1.5;
+}
+
+.m-text-box{
+	margin:0 20px;
+}
+
+
+.m-p{
+	color: #666;
+	line-height: 2;
+	font-size: 15px;
+}
+.m-p span{
+	color: red;
+}
+.m-p a{
+	color: #666;
+	border-bottom: 1px solid #666;
+	line-height: 0.8;
+	display: inline-block;
+}
+.m-p a:hover{
+	border-bottom: none;
+}
+.m-text-bold{
+	color: red;
+	font-weight: bold;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+
+.table{
+	border:1px solid #d2d2d2;
+	width: 100%;
+	color: #666;
+}
+
+.m-tr{
+	border:1px solid #d2d2d2;
+}
+
+.m-th{
+	border:1px solid #d2d2d2;
+	width: 22%;
+	padding: 15px 0;
+	vertical-align: middle;
+}
+
+.table input{
+	width:45%;
+	margin: 15px 0 15px 15px; 
+}
+.table textarea{
+	width: 90%;
+	margin:10px 0 15px 15px;
+}
+
+
+.btn{
+	font-size: 15px;
+	background: linear-gradient(#FBFBFB,#f4f4f4);
+	border-radius:4px;
+	border: 1px solid #d2d2d2;
+	padding: 5px 8px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 43%;
+}
+.btn:hover{
+	background: #fff;
+	border :1px solid #333;
+}
+
+
+
+.side{
+	width: 23%;
+	float: right;
+	margin-right: 35px;
+	margin-top: 30px;
+}
+.s-framebox{
+	border: 1px solid #d2d2d2;
+	background: linear-gradient(#FBFBFB,#f4f4f4);
+	margin-bottom: 25px;
+	padding: 10px;
+}
+.s-box{
+	margin-bottom: 25px;
+}
+.s-h4-box{
+	border: 1px solid #d2d2d2;
+	border-top: 5px solid blue;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #f4f4f4;
+	padding: 20px 10px;
+	color: #666;
+}
+.s-list {
+	border-bottom: 1px solid #d2d2d2;
+	font-size: 16px;
+	padding: 15px 5px;
+	color: #666;
+}
+.s-list:hover{
+	background: #fff;
+	color: blue;
+}
+.s-list a{
+	color: #666;
+}
+
+.s-img{
+	width: 18%;
+	float: left;
+	margin-left:5px;
+	margin-right: 10px; 
+}
+.s-l-title{
+	font-size: 12px;
+	color: blue;
+}
+.s-l-description{
+	font-size: 12px;
+}
+
+.s-l-description:hover{
+	color: blue;
+}
+
+.s-c-name{
+	color: #666;
+	font-size: 15px;
+	font-weight: bold;
+	text-align:center;
+	margin-top: 5px;n
+}
+.s-company{
+		color: #666;
+	font-size: 12px;
+	text-align:center;
+	margin-top: 10px;
+	line-height: 1.5;
+}
+
+
+
+.s-c-box{
+	margin-bottom: 60px;
+	border: 1px solid #d2d2d2;
+	background: linear-gradient(#FBFBFB,#f4f4f4);
+	padding: 10px;
+}
+.footer{
+	clear: both;
+	background-color: blue;
+	color:#fff;
+	font-size: 13px;
+	text-align: center;
+	padding: 20px;
+	line-height: 2;
+	margin-top: 40px;
+}
+
+.f-a{
+	color: #fff;
+}
+.f-a:hover{
+	color: blue;
+	transition:1s; 
+}
+
+
+#nav-contents{
+	display: none;
+}
+.nav-invicible{
+	display: none;
+}
+
+@media screen and (max-width: 780px){
+	.h-nav{
+		display: none;
+	}
+	.h-title .h-logo{
+		max-width: 60%;
+	}
+	.container{
+		width: 98%;
+	}
+	.main{
+		float: none;
+		width: auto;
+		margin: 10px;
+	}
+	.m-img{
+		width: 120px;
+	}
+	.m-h2-box{
+		margin-top: 0px;
+	}
+	.m-th{
+		width: 38%;
+		padding: 35px;
+	}
+	.m-th{
+		width: 38%;
+		padding: 35px;
+	}
+	.m-td{
+		line-height: 2;
+		vertical-align: middle;
+		padding: 0 15px;
+	}
+	.side{
+		float: none;
+		width: 95%;
+		margin:10px;
+	}
+	.s-l-box{
+		display: inline-block;
+	}
+	#nav-open span,#nav-open span:before,#nav-open span:after{
+		background: #666;
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 30px;
+	}
+	#nav-open{
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		right: 20px;
+		top: 28px;
+		display: inline-block;
+		cursor: pointer;
+		border: 1px solid #666;
+		padding: 8px; 
+	}
+	#nav-open span:before{
+		bottom: -12px;
+	}
+	#nav-open span:after{
+		bottom: -24px;
+	}
+	#nav-contents{
+		display: inline-block;
+	}
+	#nav-invicible{
+		display: none;
+	}
+	#nav-contents{
+		position: absolute;
+		top: 100px;
+		z-index: 100;
+		width: 100%;
+		height: auto;
+		background: black;
+		transition: .3s;
+		opacity: .0;
+	}
+	#nav-input:checked ~ #nav-contents{
+		opacity: .8;
+	}
+	.sp-menu-list{
+		border-bottom: 1px solid #fff;
+		text-align: left;
+		line-height: 2;
+		padding: 16px;
+	}
+	.sp-menu-list a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.sp-menu-top{
+		font-size: 18px;
+	}
+	.sp-menu-bottom{
+		font-size: 11px;
+	}
+	.btn{
+		margin-left: 38%;
+	}
+}
