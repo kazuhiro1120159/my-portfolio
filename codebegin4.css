@@ -6,9 +6,14 @@
 ----------------------------*/
 body{
     font-family: "selif",sans-serif;
+    margin: 0;
+    display: block;
 }
 .container{
-    max-width: 100%;
+    max-width:100%;
+    margin: 0;
+    display: block;
+    padding: 0% ;
 }
 .text{
     font-family: sans-serif;
@@ -16,9 +21,18 @@ body{
 }
 .title{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
-
+img{
+    vertical-align: middle;
+}
+h2{
+    font-family: "Segoe UI";
+    font-size: 40px;
+}
+h3{
+    font-family: "Segoe UI";
+}
 /*----------------------------------------------
 
 header
@@ -29,7 +43,7 @@ header
     align-items: center;
     position: relative ;
     background-image: url(header-image.jpg);
-    height:500px;
+    height:650px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,13 +111,21 @@ li a:hover{
         border: 1px solid #d8d8d8;
     }
     
-.about_area-img img{
-    max-width: 100%;
-}
+    .about_area-img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .a-img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        object-fit: cover;
+    }
+    .about_area-img{
+        margin: 0 auto;
+    }
 
-.about_area-img{
-    margin: 0 auto;
-}
 }
 
 
@@ -114,11 +136,22 @@ about
 
 ----------------------------*/
 #about{
-    padding: 20px 0;
-    background-color: rgba(206, 206, 206, 0.2);
-    display: none;
+    padding: 100px 0;
+    background-color:#fff;
+    display: block;
+    position: relative;
+    animation: anime1 2s ease-in-out;
 }
-
+@keyframes anime1{
+    0%{
+        opacity: 0;
+        top:50px;
+    }
+    100%{
+        opacity: 1;
+        top:0px;
+    }
+}
 .about_area{
     display: flex;
     flex-wrap: wrap;
@@ -127,16 +160,18 @@ about
     }
     
     .a-img{
-        max-width: 50%;
+        width: 75%;
+        border-radius: 50%;
     }
 .about_area-img{
-    max-width: 50%;
+    width: 45%;
     text-align: center;
 }
 .about_area-description-text{
     text-align: left;
     font-size: 16px;
     padding: 15px;
+    line-height: 2;
 }
 .about_area-description{
     width: 50%;
@@ -144,9 +179,8 @@ about
 }
 .fa-twitter{
     color: #1da1f2;
-    font-size: 50px;
+    font-size: 35px;
     opacity: 0.8;
-    text-align: center;
 }
 .fa-youtube{
     color:#da1725;
@@ -174,6 +208,13 @@ about
     padding: 10px;
 }
 
+.profile{
+    font-family: "Segoe UI";
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 2px solid #353535;
+    padding:0 5px 15px 5px;
+}
 /*----------------------------------------------
 
 service
@@ -181,19 +222,26 @@ service
 
 ----------------------------*/
 #service{
-    padding: 20px 0;
-    background-color: rgba(110, 109, 114, 0.3);
-    display: none;
+    padding: 100px 0;
+    background-color:rgba(206, 206, 206, 0.2);
+    
+    display: block;
+    position: relative;
+    animation: anime1 3s ease-in-out;
 }
 #contact{
-    padding: 20px 0;
-    background-color: rgba(110, 109, 114, 0.3);
-    display: none;
+    padding: 100px 0;
+    background-color:rgba(206, 206, 206, 0.2);
+    display: block;
+    position: relative;
+    animation: anime1 4s ease-in-out;
 }
 #works{
-    padding: 20px 0;
-    background-color:rgba(206, 206, 206, 0.2);
-    display: none;
+    padding: 140px 0;
+    background-color:#fff;
+    display: block;
+    position: relative;
+    animation: anime1 4s ease-in-out;
 }
 #service h3{
     text-align: center;
@@ -206,7 +254,7 @@ service
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 30px;
-    color:rgb(14, 104, 240);
+    color:rgb(65, 78, 100);
 }
 .works-icon{
     text-align: center;
@@ -282,16 +330,6 @@ button{
     opacity: 0.9;
 }
 
-@media screen and (max-width: 768px){
-    
-    .form{
-        width: 100%;
-    }
-    .form-content{
-        margin: 30px;
-    }
-    
-    }
 
 
 
@@ -303,3 +341,57 @@ footer{
     padding: 20px;
     color:#fff;
 }
+
+.portfolio_box {
+    width: calc(100% / 3);
+    height: 300px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.portfolio_content a{
+    text-decoration: none;
+}
+.portfolio_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.porfolio_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.content-p{
+    font-size: 18px;
+    text-align: center;
+    color:rgb(65, 78, 100);
+}
+@media screen and (max-width: 768px){
+    
+    .form{
+        width: 100%;
+    }
+    .form-content{
+        margin: 30px;
+    }
+    .portfolio_box{
+    width:100%;
+    margin: 0 ;
+}
+
+.portfolio_content {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+    }
+    @media screen and (max-width: 480px){
+    
+        .portfolio_box {
+            width:100%;
+            margin: 0 ;
+    }
+        
+        }
